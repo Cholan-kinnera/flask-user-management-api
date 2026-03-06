@@ -24,22 +24,22 @@ graph TD
     classDef db fill:#fbe9e7,stroke:#bf360c,stroke-width:2px;
 
     %% Elements
-    Client[Client<br/>(Postman / Frontend)]:::client
+    Client["Client (Postman / Frontend)"]:::client
 
-    subgraph Flask_Application [Flask Application (app.py)]
+    subgraph Flask_Application [Flask Application - app.py]
         direction TB
-        ApiRoutes[API Routes / Endpoints<br/>(Blueprint Definition)]:::framework
+        ApiRoutes["API Routes / Endpoints"]:::framework
         
         subgraph Middleware_Chain [Request Handling Chain]
             direction LR
-            RateLimiter[Rate Limiter<br/>(Flask-Limiter)]:::middleware
-            JwtAuth[JWT Auth Layer<br/>(Flask-JWT-Extended)]:::middleware
+            RateLimiter["Rate Limiter (Flask-Limiter)"]:::middleware
+            JwtAuth["JWT Auth Layer (Flask-JWT-Extended)"]:::middleware
         end
     end
 
-    ServiceLayer[Service Layer<br/>(services.py)<br/>Business Logic]:::logic
-    DataModels[Database Models<br/>(models.py)<br/>SQLAlchemy ORM]:::data
-    Database[(MySQL Database)]:::db
+    ServiceLayer["Service Layer (services.py)"]:::logic
+    DataModels["Database Models (models.py)"]:::data
+    Database[("MySQL Database")]:::db
 
     %% Flow/Connections
     Client -->|HTTP Requests| ApiRoutes
