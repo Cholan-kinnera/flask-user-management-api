@@ -1,65 +1,44 @@
 # Flask User Management API
 
-<p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&color=F7DF1E&center=true&vCenter=true&width=600&lines=Flask+User+Management+API;JWT+Authentication+System;Production+Style+Backend+Project;Python+Flask+MySQL+Architecture" />
-</p>
-
-A **production-style RESTful backend API** built with **Flask and MySQL**.
 A **production-style RESTful backend API** built with **Flask and MySQL**.  
 This project demonstrates real-world backend engineering practices including **JWT authentication, modular architecture, secure password hashing, rate limiting, and database-driven APIs**.
 
-![Python](https://img.shields.io/badge/python-3.10+-blue)
-![Flask](https://img.shields.io/badge/flask-latest-green)
-![MySQL](https://img.shields.io/badge/mysql-latest-orange)
-![JWT](https://img.shields.io/badge/auth-JWT-yellow)
+---
+
+## Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web_Framework-black?logo=flask)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange?logo=mysql)
+![JWT](https://img.shields.io/badge/Auth-JWT-yellow)
 ![SQLAlchemy](https://img.shields.io/badge/ORM-SQLAlchemy-red)
+![Postman](https://img.shields.io/badge/API_Testing-Postman-orange?logo=postman)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
-## Table of Contents
+## Project Overview
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [System Architecture](#system-architecture)
-- [Request Flow](#request-flow)
-- [Installation](#installation)
-- [Verify the Server](#verify-the-server)
-- [Environment Variables](#environment-variables)
-- [API Documentation](#api-documentation)
-- [API Testing](#api-testing)
-- [Postman Testing Screenshots](#postman-testing-screenshots)
+This API provides a **secure and scalable user management system** implementing:
 
-# Features
-
-- User registration
-- JWT authentication
-- Password hashing
+- User registration and authentication
+- JWT-based stateless authentication
+- Secure password hashing
+- Rate limiting protection
 - CRUD user management
-- Rate limiting for security
 - Pagination support
-- Modular backend architecture
-- Environment variable configuration
-- Structured logging
+- Modular service-layer architecture
+
+The project is structured to follow **industry backend architecture practices**, making it suitable as a **production-ready foundation for scalable web applications**.
 
 ---
 
-# Tech Stack
+## Quick Links
 
-| Layer | Technology |
-|------|-----------|
-| Backend | Flask |
-| Language | Python |
-| Database | MySQL |
-| ORM | SQLAlchemy |
-| Authentication | Flask-JWT-Extended |
-| Security | Werkzeug |
-| Rate Limiting | Flask-Limiter |
-| Environment Config | python-dotenv |
-| API Testing | Postman |
-| Version Control | Git & GitHub |
+- 📄 [Technical Documentation](docs/flask-user-management-api-report.pdf)
+- 📸 [Postman Testing Screenshots](screenshots)
+- 🔗 [GitHub Repository](https://github.com/Cholan-kinnera/flask-user-management-api)
 
----
 
 # Project Structure
 
@@ -549,9 +528,9 @@ Deployment instructions will be updated once the API is deployed.
 
 ## Technical Documentation
 
-A full technical report for this project is available below.
+A complete technical documentation for this project is available below.
 
-The document includes:
+This document includes:
 
 - System architecture
 - API request flow
@@ -560,10 +539,9 @@ The document includes:
 - Testing methodology
 - Deployment architecture
 
-📄 **View Full Documentation**
+📄 **Download Full Technical Report**
 
-[Flask User Management API – Technical Report](docs/flask-user-management-api-report.pdf)
-
+[Download Documentation PDF](https://github.com/Cholan-kinnera/flask-user-management-api/raw/main/docs/flask-user-management-api-report.pdf)
 
 ## Future Improvements
 
