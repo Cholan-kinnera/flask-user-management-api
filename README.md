@@ -480,3 +480,26 @@ DELETE /api/v1/users/<id>
 ```
 Authorization: Bearer <JWT_TOKEN>
 ```
+## API Testing
+
+All API endpoints were tested using **Postman** to ensure correct functionality, authentication handling, and proper response formatting.
+
+The following scenarios were tested:
+
+- User registration
+- User login and JWT token generation
+- Accessing protected routes using JWT authentication
+- Retrieving users with pagination
+- Updating user information
+- Deleting users from the database
+
+Each request was validated for:
+
+- Correct HTTP status codes
+- Proper JSON responses
+- Authentication and authorization checks
+- Input validation and error handling
+
+➡️ [View Postman Testing Screenshots](#screenshots)
+
+
