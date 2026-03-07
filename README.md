@@ -245,3 +245,47 @@ Example:
 ```bash
 curl http://localhost:5000
 ```
+
+## Environment Variables
+
+The application uses environment variables for configuration.  
+Create a `.env` file in the root directory of the project.
+
+An example configuration is provided in:
+
+```
+.env.example
+```
+
+Copy the example file and update it with your own values.
+
+### Example `.env` configuration
+
+```
+DATABASE_URL=mysql+pymysql://root:password@localhost/flask_user_db
+JWT_SECRET_KEY=your_secret_key
+```
+
+### Explanation
+
+| Variable | Description |
+|--------|-------------|
+| DATABASE_URL | Connection string used to connect to the MySQL database |
+| JWT_SECRET_KEY | Secret key used to sign and verify JWT authentication tokens |
+
+### Creating the `.env` file
+
+You can create the `.env` file manually or run:
+
+```bash
+cp .env.example .env
+```
+
+Then edit the file and add your configuration values.
+
+### Important
+
+The `.env` file is ignored by Git to prevent sensitive credentials from being committed to the repository.  
+Only `.env.example` is included to show the required environment variables.
+
+Make sure the `.env` file exists before running the application.
