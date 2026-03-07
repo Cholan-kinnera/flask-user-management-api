@@ -1,5 +1,10 @@
 # Flask User Management API
 
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&color=F7DF1E&center=true&vCenter=true&width=600&lines=Flask+User+Management+API;JWT+Authentication+System;Production+Style+Backend+Project;Python+Flask+MySQL+Architecture" />
+</p>
+
+A **production-style RESTful backend API** built with **Flask and MySQL**.
 A **production-style RESTful backend API** built with **Flask and MySQL**.  
 This project demonstrates real-world backend engineering practices including **JWT authentication, modular architecture, secure password hashing, rate limiting, and database-driven APIs**.
 
