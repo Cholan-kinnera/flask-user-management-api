@@ -56,3 +56,58 @@ flask_user_manager/
 ├── .gitignore        # Git ignored files
 └── README.md         # Project documentation
 ```
+
+
+
+### Explanation
+
+| File | Purpose |
+|-----|--------|
+| `app.py` | Main Flask application and API routes |
+| `models.py` | SQLAlchemy database models |
+| `services.py` | Business logic and database operations |
+| `extensions.py` | Shared Flask extensions |
+| `requirements.txt` | Project dependencies |
+| `.env.example` | Example environment configuration |
+
+---
+
+# System Architecture
+
+## Backend Architecture Overview
+
+The backend is designed using a **layered architecture** to ensure clear separation of concerns between request handling, security middleware, business logic, and database access.
+
+This design improves:
+
+- maintainability
+- scalability
+- readability of the codebase
+- modular development
+
+### Architecture Diagram
+
+```mermaid
+flowchart LR
+
+A[Client<br>Postman / Frontend]
+
+B[Flask API<br>app.py]
+
+C[JWT Authentication]
+
+D[Rate Limiting]
+
+E[Service Layer<br>services.py]
+
+F[SQLAlchemy Models<br>models.py]
+
+G[(MySQL Database)]
+
+A --> B
+B --> C
+B --> D
+C --> E
+D --> E
+E --> F
+F --> G
