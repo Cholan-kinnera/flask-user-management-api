@@ -127,3 +127,44 @@ class E service
 class F data
 class G database
 ```
+
+
+Request Flow
+
+This diagram shows how an API request flows through the system.
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{
+'primaryColor':'#f8fafc',
+'primaryBorderColor':'#3b82f6',
+'lineColor':'#475569',
+'secondaryColor':'#f1f5f9',
+'tertiaryColor':'#eef2ff',
+'fontFamily':'Arial'
+}}}%%
+
+sequenceDiagram
+    participant Client
+    participant FlaskAPI
+    participant ServiceLayer
+    participant Database
+
+    Client->>FlaskAPI: HTTP Request
+
+    loop JWT Validation
+        FlaskAPI->>FlaskAPI: Validate Token
+    end
+
+    loop Rate Limit Check
+        FlaskAPI->>FlaskAPI: Check Limits
+    end
+
+    FlaskAPI->>ServiceLayer: Business Logic
+
+    ServiceLayer->>Database: Query / Update
+    Database-->>ServiceLayer: Result
+
+    ServiceLayer-->>FlaskAPI: Response Data
+    FlaskAPI-->>Client: JSON Response
+```
+
