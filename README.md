@@ -151,3 +151,97 @@ sequenceDiagram
     ServiceLayer-->>FlaskAPI: Response Data
     FlaskAPI-->>Client: JSON Response
 ```
+
+## Installation
+
+Follow these steps to set up and run the project locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/flask-user-management-api.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd flask-user-management-api
+```
+
+---
+
+### 2. Create a Virtual Environment
+
+Create a Python virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+Activate the virtual environment.
+
+Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+macOS / Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+### 3. Install Dependencies
+
+Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 4. Configure Environment Variables
+
+Create a `.env` file in the root directory.
+
+Example configuration:
+
+```env
+DATABASE_URL=mysql+pymysql://root:password@localhost/flask_user_db
+JWT_SECRET_KEY=your_secret_key
+```
+
+A template is provided in:
+
+```
+.env.example
+```
+
+---
+
+### 5. Run the Application
+
+Start the Flask server:
+
+```bash
+python app.py
+```
+
+The API will start running at:
+
+```
+http://localhost:5000
+```
+## Verify the Server
+
+You can test the API using Postman or curl.
+
+Example:
+
+```bash
+curl http://localhost:5000
+```
