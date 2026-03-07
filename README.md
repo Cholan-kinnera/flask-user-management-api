@@ -43,3 +43,13 @@ This project demonstrates real-world backend engineering practices including **J
 ---
 
 # Project Structure
+
+flask_user_manager/
+app.py
+models.py
+services.py
+extensions.py
+requirements.txt
+.env.example
+.gitignore
+README.md
