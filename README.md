@@ -159,7 +159,7 @@ Follow these steps to set up and run the project locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/flask-user-management-api.git
+git clone https://github.com/Cholan-kinnera/flask-user-management-api.git
 ```
 
 Navigate into the project directory:
