@@ -500,6 +500,5 @@ Each request was validated for:
 - Authentication and authorization checks
 - Input validation and error handling
 
-➡️ [View Postman Testing Screenshots](#screenshots)
-
+➡️[View Postman Testing Screenshots](#postman-testing-screenshots)
 
