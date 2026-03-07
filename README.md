@@ -5,7 +5,6 @@ A robust, production-ready RESTful backend API built with **Flask** and **MySQL*
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![Flask](https://img.shields.io/badge/flask-latest-green.svg)
 ![MySQL](https://img.shields.io/badge/mysql-latest-orange.svg)
-![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
 ---
 
