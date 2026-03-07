@@ -10,38 +10,52 @@ A production-ready RESTful backend API built with **Flask** and **MySQL**. This 
 
 ## 🏗️ System Architecture
 
-The following diagram illustrates the request flow, showing how the application separates concerns into security middleware, business logic, and database operations.
+## Backend Architecture Overview
+
+The system follows a layered architecture separating request handling, security middleware, business logic, and data access. This improves maintainability, scalability, and overall system design.
+
+The backend is designed using a layered architecture to ensure clear separation of concerns between request handling, security middleware, business logic, and database access.
+
 
 ```mermaid
-graph LR
-    %% Styles
-    classDef client fill:#f5f5f5,stroke:#333,stroke-width:2px;
-    classDef flask fill:#e1f5fe,stroke:#0277bd,stroke-width:2px;
-    classDef logic fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    classDef data fill:#ede7f6,stroke:#5e35b1,stroke-width:2px;
-    classDef db fill:#fbe9e7,stroke:#bf360c,stroke-width:2px;
+flowchart LR
 
-    %% Client Layer
-    Client["Client<br/>(Postman / Frontend)"]:::client
+%% Nodes
+A[Client<br>Postman / Frontend]
 
-    %% Backend Layer
-    subgraph Backend ["Backend Layer"]
-        Flask["Flask API<br/>(app.py)"]:::flask
-        Auth["Auth & Rate Limiting"]:::flask
-    end
+B[Flask API<br>app.py]
 
-    %% Business Logic Layer
-    Service["Service Layer<br/>(services.py)"]:::logic
+C[JWT Authentication]
 
-    %% Data Layer
-    subgraph Data ["Data Layer"]
-        Models["SQLAlchemy Models<br/>(models.py)"]:::data
-        Database[("MySQL<br/>Database")]:::db
-    end
+D[Rate Limiting]
 
-    %% Flow
-    Client --> Flask
-    Flask --> Auth
-    Auth --> Service
-    Service --> Models
-    Models --> Database
+E[Service Layer<br>services.py]
+
+F[SQLAlchemy Models<br>models.py]
+
+G[(MySQL Database)]
+
+%% Flow
+A --> B
+B --> C
+B --> D
+C --> E
+D --> E
+E --> F
+F --> G
+
+%% Styling
+classDef client fill:#E3F2FD,stroke:#1E88E5,stroke-width:2px,color:#000
+classDef api fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#000
+classDef security fill:#FFF8E1,stroke:#FB8C00,stroke-width:2px,color:#000
+classDef service fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#000
+classDef data fill:#E0F7FA,stroke:#00838F,stroke-width:2px,color:#000
+classDef database fill:#FCE4EC,stroke:#D81B60,stroke-width:2px,color:#000
+
+class A client
+class B api
+class C,D security
+class E service
+class F data
+class G database
+```
