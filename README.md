@@ -494,25 +494,31 @@ DELETE /api/v1/users/<id>
 ```
 Authorization: Bearer <JWT_TOKEN>
 ```
-## API Testing
+## Postman Testing Screenshots
 
-All API endpoints were tested using **Postman** to ensure correct functionality, authentication handling, and proper response formatting.
+Below are sample previews of API testing using **Postman**.
 
-The following scenarios were tested:
+For the full set of API testing screenshots, open the screenshots directory:
 
-- User registration
-- User login and JWT token generation
-- Accessing protected routes using JWT authentication
-- Retrieving users with pagination
-- Updating user information
-- Deleting users from the database
+📸 **[View All Screenshots](https://github.com/Cholan-kinnera/flask-user-management-api/tree/main/screenshots)**
 
-Each request was validated for:
+---
 
-- Correct HTTP status codes
-- Proper JSON responses
-- Authentication and authorization checks
-- Input validation and error handling
+### API Testing Preview
 
-➡️ [View Postman Testing Screenshots](#postman-testing-screenshots)
+<p align="center">
+  <img src="screenshots/2.User-Register.png" width="45%" alt="User Registration Endpoint">
+  <img src="screenshots/3.User-Login(JWT-Tokens).png" width="45%" alt="User Login Endpoint">
+</p>
 
+<p align="center">
+  <em>Postman testing of user registration and JWT authentication endpoints</em>
+</p>
+
+---
+
+These screenshots demonstrate:
+
+- Successful user registration
+- JWT token generation during login
+- Proper API response handling
