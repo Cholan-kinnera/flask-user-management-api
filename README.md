@@ -40,17 +40,22 @@ The project is structured to follow **industry backend architecture practices**,
 
 ## Table of Contents
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Quick Links](#quick-links)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [System Architecture](#system-architecture)
-- [Request Flow](#request-flow)
 - [Installation](#installation)
-- [Verify the Server](#verify-the-server)
 - [Environment Variables](#environment-variables)
 - [API Documentation](#api-documentation)
-- [API Testing](#api-testing)
 - [Postman Testing Screenshots](#postman-testing-screenshots)
+- [Deployment](#deployment)
+- [Technical Documentation](#technical-documentation)
+- [Future Improvements](#future-improvements)
+- [Author](#author)
 
 # Features
 
@@ -348,7 +353,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-## Register User
+### Register User
 
 Creates a new user account.
 
@@ -390,7 +395,7 @@ Status: 409 Conflict
 
 ---
 
-## Login
+### Login
 
 Authenticates a user and returns a JWT access token.
 
@@ -421,7 +426,7 @@ Status: 200 OK
 
 ---
 
-## Get Users
+### Get Users
 
 Returns a list of users with pagination support.
 
@@ -461,7 +466,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-## Get Single User
+### Get Single User
 
 Returns details of a specific user.
 
@@ -479,7 +484,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-## Update User
+### Update User
 
 Updates an existing user's information.
 
@@ -506,7 +511,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-## Delete User
+### Delete User
 
 Deletes a user from the system.
 
