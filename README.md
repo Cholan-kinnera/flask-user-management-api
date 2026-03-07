@@ -31,6 +31,7 @@ Response:
 {
   "status": "Flask User Management API running"
 }
+```
 
 ---
 ## Project Overview
