@@ -289,3 +289,194 @@ The `.env` file is ignored by Git to prevent sensitive credentials from being co
 Only `.env.example` is included to show the required environment variables.
 
 Make sure the `.env` file exists before running the application.
+
+
+## API Documentation
+
+### Base URL
+
+```
+http://localhost:5000
+```
+
+All protected endpoints require the following header:
+
+```
+Authorization: Bearer <JWT_TOKEN>
+```
+
+---
+
+## Register User
+
+Creates a new user account.
+
+### Endpoint
+
+```
+POST /api/v1/register
+```
+
+### Request Body
+
+```json
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "password123"
+}
+```
+
+### Success Response
+
+```json
+Status: 201 Created
+
+{
+  "message": "User registered successfully"
+}
+```
+
+### Error Response
+
+```json
+Status: 409 Conflict
+
+{
+  "error": "Email already exists"
+}
+```
+
+---
+
+## Login
+
+Authenticates a user and returns a JWT access token.
+
+### Endpoint
+
+```
+POST /api/v1/login
+```
+
+### Request Body
+
+```json
+{
+  "email": "john@example.com",
+  "password": "password123"
+}
+```
+
+### Success Response
+
+```json
+Status: 200 OK
+
+{
+  "access_token": "your_jwt_token"
+}
+```
+
+---
+
+## Get Users
+
+Returns a list of users with pagination support.
+
+### Endpoint
+
+```
+GET /api/v1/users
+```
+
+### Query Parameters
+
+```
+?page=1
+?limit=10
+```
+
+### Headers
+
+```
+Authorization: Bearer <JWT_TOKEN>
+```
+
+### Example Response
+
+```json
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "created_at": "2026-03-06"
+    }
+  ]
+}
+```
+
+---
+
+## Get Single User
+
+Returns details of a specific user.
+
+### Endpoint
+
+```
+GET /api/v1/users/<id>
+```
+
+### Headers
+
+```
+Authorization: Bearer <JWT_TOKEN>
+```
+
+---
+
+## Update User
+
+Updates an existing user's information.
+
+### Endpoint
+
+```
+PUT /api/v1/users/<id>
+```
+
+### Headers
+
+```
+Authorization: Bearer <JWT_TOKEN>
+```
+
+### Request Body
+
+```json
+{
+  "name": "Updated Name",
+  "email": "updated@email.com"
+}
+```
+
+---
+
+## Delete User
+
+Deletes a user from the system.
+
+### Endpoint
+
+```
+DELETE /api/v1/users/<id>
+```
+
+### Headers
+
+```
+Authorization: Bearer <JWT_TOKEN>
+```
