@@ -1,30 +1,28 @@
 # Flask User Management API
 
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&color=F7DF1E&center=true&vCenter=true&width=600&lines=Flask+User+Management+API;JWT+Authentication+System;Production+Style+Backend+Project;Python+Flask+SQLAlchemy+Architecture" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&color=F7DF1E&center=true&vCenter=true&width=600&lines=Flask+User+Management+API;JWT+Authentication+System;Production+Style+Backend+Project;Python+Flask+MySQL+Architecture" />
 </p>
 
-A **production-style RESTful backend API** built with **Flask and SQLAlchemy**.  
+A **production-style RESTful backend API** built with **Flask and MySQL**.  
 This project demonstrates real-world backend engineering practices including **JWT authentication, modular architecture, secure password hashing, rate limiting, and database-driven APIs**.
 
 ![Python](https://img.shields.io/badge/python-3.10+-blue)
 ![Flask](https://img.shields.io/badge/flask-latest-green)
-![SQLAlchemy](https://img.shields.io/badge/ORM-SQLAlchemy-red)
+![MySQL](https://img.shields.io/badge/mysql-latest-orange)
 ![JWT](https://img.shields.io/badge/auth-JWT-yellow)
+![SQLAlchemy](https://img.shields.io/badge/ORM-SQLAlchemy-red)
 ![Deployment](https://img.shields.io/badge/deployment-render-purple)
 
----
 
 # Live API
 
 The API is deployed and publicly accessible.
 
 Base URL:
-
 https://flask-user-management-api-3uqz.onrender.com
 
 Health Check:
-
 GET /
 
 Response:
@@ -32,7 +30,8 @@ Response:
 ```json
 {
   "status": "Flask User Management API running"
-  }
+}
+
 ---
 ## Project Overview
 
@@ -55,7 +54,7 @@ The project is structured to follow **industry backend architecture practices**,
 - 📄 [Technical Documentation](docs/flask-user-management-api-report.pdf)
 - 📸 [Postman Testing Screenshots](screenshots)
 - 🔗 [GitHub Repository](https://github.com/Cholan-kinnera/flask-user-management-api)
-
+- 🌐 [Live API](https://flask-user-management-api-3uqz.onrender.com)
 
 
 ## Table of Contents
