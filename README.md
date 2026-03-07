@@ -11,6 +11,20 @@ This project demonstrates real-world backend engineering practices including **J
 
 ---
 
+## Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [System Architecture](#system-architecture)
+- [Request Flow](#request-flow)
+- [Installation](#installation)
+- [Verify the Server](#verify-the-server)
+- [Environment Variables](#environment-variables)
+- [API Documentation](#api-documentation)
+- [API Testing](#api-testing)
+- [Postman Testing Screenshots](#postman-testing-screenshots)
+
 # Features
 
 - User registration
@@ -500,5 +514,5 @@ Each request was validated for:
 - Authentication and authorization checks
 - Input validation and error handling
 
-➡️[View Postman Testing Screenshots](#postman-testing-screenshots)
+➡️ [View Postman Testing Screenshots](#postman-testing-screenshots)
 
