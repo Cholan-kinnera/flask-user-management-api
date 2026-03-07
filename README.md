@@ -527,3 +527,59 @@ These screenshots demonstrate:
 - Successful user registration
 - JWT token generation during login
 - Proper API response handling
+
+
+## Deployment
+
+This API can be deployed using cloud platforms such as **Render**.
+
+Example deployment stack:
+
+Client → Nginx → Gunicorn → Flask → MySQL
+
+Deployment steps include:
+
+1. Connect GitHub repository to Render
+2. Install dependencies using `requirements.txt`
+3. Configure environment variables
+4. Start the application using Gunicorn
+
+Deployment instructions will be updated once the API is deployed.
+
+
+## Technical Documentation
+
+A full technical report for this project is available below.
+
+The document includes:
+
+- System architecture
+- API request flow
+- Database schema
+- Security implementation
+- Testing methodology
+- Deployment architecture
+
+📄 **View Full Documentation**
+
+[Flask User Management API – Technical Report](docs/flask-user-management-api-report.pdf)
+
+
+## Future Improvements
+
+Potential future enhancements for this project include:
+
+- Role-based access control (RBAC)
+- Refresh tokens for JWT authentication
+- Automated unit testing using pytest
+- Docker containerization
+- CI/CD pipeline integration
+
+## Author
+
+**Cholan Kinnera**
+
+GitHub:  
+https://github.com/Cholan-kinnera
+
+
