@@ -27,7 +27,7 @@ GET /
 
 Response:
 
-```json
+```json+
 {
   "status": "Flask User Management API running"
 }
@@ -576,20 +576,22 @@ These screenshots demonstrate:
 
 ## Deployment
 
-This API can be deployed using cloud platforms such as **Render**.
+This API is deployed on **Render**, a cloud platform for hosting backend services.
 
-Example deployment stack:
+Example deployment architecture:
 
-Client → Nginx → Gunicorn → Flask → MySQL
+Client → Render Web Service → Flask Application → SQLAlchemy ORM → Database
 
 Deployment steps include:
 
-1. Connect GitHub repository to Render
-2. Install dependencies using `requirements.txt`
-3. Configure environment variables
-4. Start the application using Gunicorn
+1. Connect the GitHub repository to Render
+2. Configure the build command to install dependencies using `requirements.txt`
+3. Add required environment variables in Render
+4. Start the Flask application using the start command defined in Render
 
-Deployment instructions will be updated once the API is deployed.
+Live API:
+
+https://flask-user-management-api-3uqz.onrender.com
 
 
 ## Technical Documentation
